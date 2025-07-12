@@ -1,0 +1,106 @@
+🕹️ Website Description
+A very simple, single-page, early 2000s-style text posting website, where:
+
+✅ What Users Can Do:
+Post anonymous text messages
+
+No login, no signup.
+
+Set a name manually or use a random anonymous name
+
+Name is required to post (either typed or auto-generated).
+
+Edit the name before each post
+
+Name field is editable every time.
+
+Only text posts are allowed (no images, no links).
+
+See a feed of all posts below the posting box.
+
+❌ What the Site Will NOT Have:
+No profiles
+
+No user authentication
+
+No likes
+
+No comments
+
+No media uploads
+
+No separate pages (just 1 single page)
+
+No admin or moderation system (optional later)
+
+🖥️ Design Style
+Looks like a website from the early 2000s
+
+Simple fonts (like Arial, Verdana)
+
+Boxy layout
+
+Grey or light blue background
+
+Borders around posts
+
+No animations or modern styles
+
+Must be responsive on mobile
+
+Text wraps well
+
+Inputs/buttons stay readable and usable on small screens
+
+🧩 Features on the Page
+Top section:
+A title/header (e.g., "Anonymous Board")
+
+A form with:
+
+Name input (required, auto-filled if empty with random name)
+
+Post textarea (required)
+
+Submit button
+
+Below:
+A post feed showing:
+
+Small-size name (e.g., "by: anon123" in gray)
+
+Medium-size post text (main content)
+
+Newest posts appear on top
+
+🧰 What You Need to Build It
+Frontend:
+HTML: Build page structure (form, feed)
+
+CSS: Classic 2000s style and responsive layout
+
+JavaScript:
+
+Handle form submission
+
+If name is empty → generate random name
+
+Fetch existing posts from backend
+
+Show new posts on the feed instantly
+
+Backend:
+Node.js + Express server
+
+Receives post data (POST /post)
+
+Sends post list (GET /posts)
+
+Database is MongoDB (easy for JSON-style data)
+
+CORS + Body parser middleware
+
+To handle frontend requests from browser
+
+Note: do not use complex commands make it very simple code workable easy user friendly.
+Note: use fetch application json then res codes that is very easy

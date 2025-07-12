@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anonymous Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>POST IT</h1>
+    </header>
+    <main>
+      <div id="form-container">
+        <form id="post-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Leave blank for a random name" />
+          </div>
+          <div class="form-group">
+            <label for="post">Post:</label>
+            <textarea id="post" name="post" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div id="feed-container">
+        <h2>Feed</h2>
+        <div id="feed">
+          <!-- Posts will appear here -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Connect script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
