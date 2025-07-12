@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nameInput = document.getElementById('name');
     const postInput = document.getElementById('post');
     const feed = document.getElementById('feed');
-    const API_BASE = import.meta.env.VITE_API_BASE_URL
+const API_BASE = 'https://backend-kohl-kappa-22.vercel.app'; // or localhost during development
+
 
     // Function to generate a random anonymous name
     const generateRandomName = () => {
