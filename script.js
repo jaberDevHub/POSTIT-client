@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to fetch and display posts
     const fetchPosts = async () => {
         try {
-            const response = await fetch('http://localhost:3000/posts');
+            const response = await fetch(`${API_BASE}/posts`);
             const posts = await response.json();
             feed.innerHTML = ''; // Clear the feed
             posts.forEach(post => {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/posts', {
+            const response = await fetch(`${API_BASE}/posts`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
