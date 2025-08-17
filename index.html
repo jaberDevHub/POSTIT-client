@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -29,13 +29,221 @@
       <div id="feed-container">
         <h2>Feed</h2>
         <div id="feed">
-          <!-- Posts will appear here -->
+          Posts will appear here
         </div>
       </div>
     </main>
   </div>
 
   <!-- Connect script.js -->
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wish IT</title>
+  <style>
+    body {
+      background-color: #340064;
+      color: #000000;
+      font-family: "Verdana", "Tahoma", "Arial", sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+    }
+
+    #container {
+      width: 80%;
+      max-width: 750px;
+      margin: auto;
+      border: 2px solid #000080;
+      background-color: #ffffff;
+      padding: 10px;
+      text-align: left;
+    }
+
+    header {
+      background-color: #ccccff;
+      padding: 10px;
+      border-bottom: 1px solid #999;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .subtext {
+      font-size: 13px;
+      font-style: italic;
+      color: #333;
+      margin-top: 4px;
+    }
+
+    main {
+      padding: 15px;
+    }
+
+    #form-container {
+      margin-top: 20px;
+      background-color: #eeeeee;
+      padding: 15px;
+      border: 1px dashed #999;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 98%;
+      padding: 6px;
+      font-size: 14px;
+      border: 1px solid #333;
+      background-color: #fffff0;
+      font-family: "Verdana", "Tahoma", "Arial", sans-serif;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+      padding: 1px 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    
+    button:active {
+        border-style: inset;
+    }
+
+    #feed-container {
+      margin-top: 30px;
+    }
+
+    #feed-container h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #000080;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .post {
+      border-top: 1px dotted #888;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+    
+    .post:first-child {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .name {
+      font-size: 12px;
+      color: #000080;
+      font-weight: bold;
+    }
+
+    .text {
+      font-size: 25px;
+      margin-top: 4px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-bottom: 5px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <a href="./log/login.html">Login</a> <br><br>
+      <h1>I Wish...</h1>
+      <div class="subtext">Tell the universe what you want.</div>
+    </header>
+    <main>
+      <div id="form-container">
+ <!--<form id="post-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Leave blank for a random name" />
+          </div>
+          <div class="form-group">
+            <label for="post">Post:</label>
+            <!-- <textarea id="post" name="post" rows="4" required></textarea> -->
+           <!-- <textarea id="post" name="post" placeholder="...I had more time" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form> -->
+        <form id="post-form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Leave blank for a random name" />
+  </div>
+  <div class="form-group">
+    <label for="post">I wish...</label>
+    <textarea id="post" name="post" rows="4" required></textarea>
+    <div id="bad-word-warning" style="color: red; font-size: 13px; display: none; margin-top: 5px;">
+      ⚠️ Please avoid using inappropriate words.
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+      </div>
+
+
+      <div id="feed-container">
+        <h2>Feed</h2>
+        <div id="feed">
+          <!-- Posts will appear here -->
+        </div>
+      </div>
+    </main>
+  </div>
+  <<script src="script.js"></script>
+  <div id="wish-popup" style="display:none; position:fixed; top:50%; left:50%;
+transform:translate(-50%, -50%); background:#fff;
+border:2px solid #6a0dad; padding:20px 30px; box-shadow:0 0 25px #b266ff;
+z-index:1000; text-align:center; font-family:'Verdana', sans-serif;
+border-radius:12px; max-width: 300px;">
+  <h2 style="color:#6a0dad; margin-bottom:10px;">🌟 Wish Accepted 🌟</h2>
+  <p style="font-size:14px; color:#333;">The universe is listening.<br>Keep believing — your time will come. 💫</p>
+  <button onclick="document.getElementById('wish-popup').style.display='none'"
+  style="margin-top:15px;padding:8px 16px;background:#6a0dad;color:#fff;border:none;border-radius:6px;cursor:pointer;">
+    Got it!
+  </button>
+</div>
+
+
+
+
+
+<div id="wish-popup" 
+style="display:none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+background: #222; color: #fff; padding: 12px 24px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);  
+">
+  <p></p>
+</div>
+
+
 </body>
 </html>
